@@ -1,17 +1,15 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="./assets/image/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <excel-to-json></excel-to-json>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ExcelToJson from './components/ExcelToJson.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ExcelToJson
   }
 }
 </script>

@@ -1,6 +1,26 @@
 <template>
   <div id="app">
-    <excel-to-json></excel-to-json>
+    <el-container>
+      <el-header class="classifyBar">
+        <el-row>
+          <el-col :span="12"><div class="icon"></div></el-col>
+          <el-col :span="12">
+            <el-row class="classifyTitle">
+              <el-col :span="6"><span>ElementUI</span></el-col>
+              <el-col :span="6"><span>Vuex</span></el-col>
+              <el-col :span="6"><span>Echarts</span></el-col>
+              <el-col :span="6"><span>待完善</span></el-col>
+            </el-row>
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-container>
+        <el-header></el-header>
+        <el-main>
+          <excel-to-json></excel-to-json>
+        </el-main>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
@@ -21,6 +41,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.classifyBar{
+  width:100%;
+  height:120px;
+}
+.icon{
+  margin-left:30px;
+  width: 100px;
+  height:120px;
+  /* background: url('./assets/img/Gabriel.png') no-repeat 100%;
+  background-size: cover; */
+}
+.classifyTitle{
+  margin-top: 30px;
 }
 </style>
